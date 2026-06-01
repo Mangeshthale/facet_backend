@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     MAX_CONCURRENT_WORKERS: int = 2
 
     # ── Paths ─────────────────────────────────────────────────────────────────
-    DATA_DIR: Path = Path(__file__).parent.parent.parent.parent / "data"
+    DATA_DIR: Path = Path(__file__).parent.parent / "data"
     FACETS_JSON: Path = DATA_DIR / "processed" / "facets_enriched.json"
 
     # ── API ───────────────────────────────────────────────────────────────────
