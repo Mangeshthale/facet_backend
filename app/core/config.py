@@ -17,9 +17,8 @@ class Settings(BaseSettings):
     MAX_CONCURRENT_WORKERS: int = 2
 
     # ── Paths ─────────────────────────────────────────────────────────────────
-    DATA_DIR: Path = Path(__file__).parent.parent / "data"
-    FACETS_JSON: Path = DATA_DIR / "processed" / "facets_enriched.json"
-
+    DATA_DIR:    Path = Path("/app/data")
+    FACETS_JSON: Path = Path("/app/data/processed/facets_enriched.json")
     # ── API ───────────────────────────────────────────────────────────────────
     API_TITLE: str = "Facet Eval API"
     API_VERSION: str = "1.0.0"
