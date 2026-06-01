@@ -16,11 +16,10 @@ import sys
 from pathlib import Path
 
 # ── Paths ────────────────────────────────────────────────────────────────────
-ROOT     = Path(__file__).parent.parent
+ROOT     = Path("/app")
 RAW_CSV  = ROOT / "data" / "raw" / "Facets_Assignment.csv"
 OUT_CSV  = ROOT / "data" / "processed" / "facets_enriched.csv"
 OUT_JSON = ROOT / "data" / "processed" / "facets_enriched.json"
-
 
 # ── Category mapping (keyword → category) ───────────────────────────────────
 CATEGORY_RULES = {
